@@ -1,0 +1,107 @@
+
+bottomnavigation Cubit:
+
+class ReportBottomNavCubit extends Cubit<int> {
+  ReportBottomNavCubit() : super(0);
+
+  changeReportNavIndex(int index) {
+    emit(index);
+  }
+}
+
+Bottomnavigation variable class:
+
+class Reportvariable {
+  static List<Map<String, dynamic>> reportBottonNav = [
+    {
+      'title': 'Trade Book',
+      'icon': const Icon(Icons.book),
+    },
+    {
+      'title': 'Holdings',
+      'icon': const Icon(Icons.shopping_bag_rounded),
+    },
+    {
+      'title': 'Positions',
+      'icon': const Icon(Icons.post_add_rounded),
+    },
+    {
+      'title': 'Fund History',
+      'icon': const Icon(Icons.attach_money_sharp),
+    },
+    {
+      'title': 'Ledger',
+      'icon': const Icon(Icons.wallet_rounded),
+    },
+  ];
+  static List<Widget> reportNavWidgets = const [
+    TradeBook(),
+    HoldingsPage(),
+    Posistion(),
+    FundHistory(),
+    Ledger(),
+  ];
+}
+
+
+bottom navigation with body and bottomnavigationbar
+  body: Column(
+              children: [
+                const DisclosureCard(),
+                const SizedBox(
+                  height: 08,
+                ),
+                Expanded(
+                  child: BlocBuilder<ReportBottomNavCubit, int>(
+                    builder: (context, state) {
+                      return IndexedStack(
+                        index: state,
+                        children: Reportvariable.reportNavWidgets,
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+            bottomNavigationBar: BlocBuilder<ReportBottomNavCubit, int>(
+              builder: (context, state) {
+                return BottomNavigationBar(
+                    selectedLabelStyle: textTheme.labelMedium,
+                    unselectedLabelStyle: textTheme.labelSmall,
+                    type: BottomNavigationBarType.fixed,
+                    currentIndex: state,
+                    selectedItemColor: AppPallete.primaryDark,
+                    onTap: (value) {
+                      context
+                          .read<ReportBottomNavCubit>()
+                          .changeReportNavIndex(value);
+                      // onItemTapped(context, value);
+                    },
+                    items: Reportvariable.reportBottonNav.map(
+                      (e) {
+                        return BottomNavigationBarItem(
+                            icon: e['icon'], label: e['title']);
+                      },
+                    ).toList());
+              },
+            )
+            
+  dependency injection:
+  
+    serviceLocator.registerFactory(
+    () => ReportBottomNavCubit(),
+  );
+  
+  
+  main.dart 
+  
+     BlocProvider(
+            create: (context) => serviceLocator<ReportBottomNavCubit>(),
+          ),
+          
+          
+  
+
+
+
+
