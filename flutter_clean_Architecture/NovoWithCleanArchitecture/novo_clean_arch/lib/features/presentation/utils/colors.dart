@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+
+Color appPrimeColor = const Color.fromRGBO(0, 74, 177, 1);
+Color titleTextColorLight = const Color.fromRGBO(67, 67, 79, 1);
+Color titleTextColorDark = Colors.white;
+Color subTitleTextColor = const Color.fromRGBO(156, 155, 173, 1);
+Color primaryRedColor = const Color.fromRGBO(236, 52, 78, 1);
+Color primaryGreenColor = const Color.fromRGBO(11, 154, 124, 1);
+Color primaryOrangeColor = const Color.fromRGBO(251, 140, 0, 1);
+Color modifyButtonColor = const Color.fromRGBO(187, 222, 251, 1);
+Color footerBackgroundColor = const Color.fromRGBO(225, 245, 254, 1);
+Color activeColor = const Color.fromRGBO(83, 183, 162, 1);
+Color inactiveColor = const Color.fromRGBO(240, 240, 240, 1);
+Color infoColorStart = const Color.fromRGBO(236, 177, 82, 1);
+Color infoColor = const Color.fromRGBO(255, 243, 224, 1);
+Color sgbPrimaryColor = const Color.fromRGBO(255, 249, 160, 1);
+final Color darkPrimaryColor = Color.fromRGBO(17, 98, 190, 1);
+final Color lightPrimaryColor = Color.fromRGBO(74, 194, 224, 1);
+final Color primaryColor = Color.fromRGBO(35, 114, 218, 1);
+final colorD96F43 = Color.fromRGBO(217, 111, 67, 1);
+final Color textIconColor = Color.fromRGBO(255, 255, 255, 1);
+final Color textPrimaryColor = Color.fromRGBO(33, 33, 33, 1);
+final Color dividerColor = Color.fromRGBO(189, 189, 189, 1);
+final Color textIconColorGray = Colors.black;
+final Color greenColor = Color.fromRGBO(76, 175, 80, 1);
+final color747480 = Color.fromRGBO(116, 116, 128, 1);
+final colorC1C1C1 = Color.fromRGBO(193, 193, 193, 1);

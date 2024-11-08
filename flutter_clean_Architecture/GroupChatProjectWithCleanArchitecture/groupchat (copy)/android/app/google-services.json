@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615869790960",
+    "project_id": "groupchat-57018",
+    "storage_bucket": "groupchat-57018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615869790960:android:a67fe5de4c2a741dbd2035",
+        "android_client_info": {
+          "package_name": "com.flattrade.groupchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhrPt9PBfmTqW6IsZSG6cQM9-1LYt6vs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

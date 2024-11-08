@@ -1,0 +1,45 @@
+{
+    "webDashboard": null,
+    "appDashBoard": null,
+    "routerArr": null,
+    "segmentArr": [
+        {
+            "id": 7,
+            "name": "IPO",
+            "fullname": "Initial Public Offering",
+            "path": "/ipo",
+            "taskId": 1,
+            "image": "https://flattrade.s3.ap-south-1.amazonaws.com/promo/IPO_App_light.png",
+            "color": "Blue",
+            "status": "Y",
+            "source": "",
+            "darkThemeImage": "https://flattrade.s3.ap-south-1.amazonaws.com/promo/IPO_App_dark.png"
+        },
+        {
+            "id": 8,
+            "name": "SGB",
+            "fullname": "Sovereign Gold Bonds",
+            "path": "/sgb",
+            "taskId": 2,
+            "image": "https://flattrade.s3.ap-south-1.amazonaws.com/promo/SGB_light.png",
+            "color": "Yellow",
+            "status": "Y",
+            "source": "",
+            "darkThemeImage": "https://flattrade.s3.ap-south-1.amazonaws.com/promo/SGB_Dark.png"
+        },
+        {
+            "id": 9,
+            "name": "G-SEC",
+            "fullname": "G-SEC",
+            "path": "/gsec",
+            "taskId": 16,
+            "image": "https://flattrade.s3.ap-south-1.amazonaws.com/promo/Gsec_light.png",
+            "color": "Green",
+            "status": "Y",
+            "source": "",
+            "darkThemeImage": "https://flattrade.s3.ap-south-1.amazonaws.com/promo/Gsec_Dark.png"
+        }
+    ],
+    "status": "S",
+    "errMsg": ""
+}
